@@ -12,7 +12,7 @@ import {ConnectionComponent} from './connection/connection.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    ConnectionComponent
+    ConnectionComponent,
     MesTeamsComponent,
     TeamComponent
   ],
