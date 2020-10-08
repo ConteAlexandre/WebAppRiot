@@ -1,0 +1,62 @@
+.itemTeam{
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 5%;
+}
+
+.itemTeam p{
+  margin: 0;
+  color: white;
+  font-size: 1.5em;
+}
+
+.iconDown{
+  width: 20px;
+  padding-right: 20px;
+}
+
+.btnSelect{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nameTeam{
+  padding: 5px 20px;
+}
+
+.col{
+  flex-direction: column;
+  width: 40%;
+}
+
+.stat {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.col p {
+  font-size: 1.2em;
+}
+.stat p {
+  font-size: 1.6em;
+}
+.right{
+  display: flex;
+  align-items: flex-end;
+}
+
+.btn{
+  width: 50%;
+  justify-content: center;
+  align-content: center;
+}
+
+.detailTeam{
+  width: 100%;
+  margin: 10px 0;
+  transition: all .8s
+}

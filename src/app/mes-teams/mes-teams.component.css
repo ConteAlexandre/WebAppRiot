@@ -1,0 +1,27 @@
+.mesTeams{
+  padding-top: 25px;
+  height: 500px;
+  background-color: crimson;
+}
+
+.title{
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 25px 5%;
+}
+
+.title p{
+  margin: 0;
+  color: white;
+  font-size: 1.5em;
+}
+
+.btn {
+  justify-content: center;
+  align-items: center;
+  margin: 25px 20% 0 20%;
+  font-size: 1.5em;
+  color: white;
+  height: 50px;
+}

@@ -1,0 +1,27 @@
+<div class="box black itemTeam">
+  <div class="btnSelect" id="btn-2" (click)="pressIcon()">
+    <p class="nameTeam">{{team.name}}</p>
+    <img class="iconDown" src="assets/icon/arrow-down-sign-to-navigate.svg"/>
+  </div>
+  <div [hidden]="hidden" class="detailTeam" >
+    <div style="display: flex;flex-direction: row;justify-content: space-around">
+      <div class="col">
+        <p>top : machin</p>
+        <p>jungle : machin</p>
+        <p>mid : machin</p>
+        <p>adc : machin</p>
+        <p>support : machin</p>
+      </div>
+      <div class="col right">
+        <div class="col stat">
+          <p>winrate :</p>
+          <p>56%</p>
+          <p>60v / 58 d</p>
+        </div>
+        <div class="box blue btn">
+          <p>edit</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

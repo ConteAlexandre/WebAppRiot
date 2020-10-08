@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
 .blue{
   background-color: rgba(42, 99, 182, 0.5);
 }
