@@ -1,9 +1,11 @@
 .container {
   margin-bottom: 2em;
+  height: 50px;
+  width: 100%;
 }
 
 .wrapper {
-  width: 500px;
+  width: 100%;
   position: fixed;
 }
 
@@ -125,6 +127,7 @@ body {
 
 #log, a {
   text-decoration: none;
+  margin-top: -1.5em;
   margin-right: 0.5em;
   color: white;
   font-size: larger;
