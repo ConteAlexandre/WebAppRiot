@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MesTeamsComponent } from './mes-teams/mes-teams.component';
 import { TeamComponent } from './mes-teams/team/team.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MesTeamsComponent,
     TeamComponent
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
