@@ -1,0 +1,50 @@
+#connection {
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  max-width: 450px;
+}
+
+#connection h2 {
+  margin-bottom: 10px;
+}
+
+#connection .register{
+  color: white;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+
+#connection .forgot {
+  color: white;
+  margin: 50px 0;
+  font-size: 15px;
+}
+
+#connection form {
+  display: flex;
+  flex-flow: column;
+}
+
+#connection form label {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#connection input {
+  height: 30px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#connection button {
+  color: white;
+  font-size: 25px;
+  padding: 10px 20px;
+  margin-top: 75px;
+  justify-content: center;
+}
+
+
