@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.blue{
+  background-color: rgba(42, 99, 182, 0.5);
+}
+
+.black{
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.teamBlue{
+  background-color: rgba(10, 0, 129, 0.50);
+}
+
+.teamRed{
+  background-color: rgba(134, 0, 0, 0.50);
+}
+
+.box{
+  display: flex;
+  border: white solid;
+}

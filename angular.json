@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "WebAppRiot"
+    }
+  },
+  "defaultProject": "WebAppRiot",
+  "cli": {
+    "analytics": false
+  }
 }
