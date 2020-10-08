@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MesTeamsComponent } from './mes-teams/mes-teams.component';
+import { TeamComponent } from './mes-teams/team/team.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {ConnectionComponent} from './connection/connection.component';
 
@@ -11,6 +13,8 @@ import {ConnectionComponent} from './connection/connection.component';
     AppComponent,
     NavbarComponent,
     ConnectionComponent
+    MesTeamsComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
