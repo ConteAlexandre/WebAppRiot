@@ -1,3 +1,17 @@
+.container {
+  margin-bottom: 5em;
+}
+
+.wrapper {
+  width: 500px;
+}
+
+.bot {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -118,3 +132,18 @@ body {
   transform: none;
 }
 
+#log {
+  float: right;
+}
+
+#log, a {
+  text-decoration: none;
+  margin-right: 1em;
+  color: white;
+  font-size: larger;
+  padding-top: 1em;
+}
+
+#log a:hover {
+  color: black;
+}
