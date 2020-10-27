@@ -1,0 +1,39 @@
+#profil {
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  max-width: 450px;
+}
+
+#register h2 {
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form label {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.form input {
+  height: 30px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.form button {
+  color: white;
+  font-size: 25px;
+  padding: 10px 20px;
+  width: 150%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: center;
+}

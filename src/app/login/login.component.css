@@ -1,4 +1,4 @@
-#connection {
+#login {
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
@@ -7,13 +7,12 @@
   max-width: 450px;
 }
 
-#connection h2 {
+#login h2 {
   margin-bottom: 10px;
 }
 
 .register{
   color: white;
-  margin-bottom: 50px;
   font-size: 15px;
 }
 
