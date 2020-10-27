@@ -6,13 +6,13 @@ import { AppComponent } from './app.component';
 import { MesTeamsComponent } from './mes-teams/mes-teams.component';
 import { TeamComponent } from './mes-teams/team/team.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import {ConnectionComponent} from './connection/connection.component';
+import {LoginComponent} from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ConnectionComponent,
+    LoginComponent,
     MesTeamsComponent,
     TeamComponent
   ],
