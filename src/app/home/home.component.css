@@ -1,0 +1,86 @@
+p {
+  color: white;
+}
+
+.homeContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.boxHome{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.boxTeams{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.titleMatch{
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.styleMatch{
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.team{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.matchBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat{
+  align-items: center;
+}
+
+.statTeamName{
+  font-size: 1.5em;
+  margin-bottom: -10px;
+  margin-top: 15px;
+}
+
+.boxWinRate{
+  display: flex;
+  margin-top: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.winRate{
+  font-size: 1.5em;
+}
+
+.rate{
+  margin-left: 10%;
+  font-size: 2em;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 60px;
+  width: 80%;
+}
+.btn p{
+  font-size: 2em;
+}
+
+
