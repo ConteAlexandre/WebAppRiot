@@ -7,6 +7,8 @@ import { MesTeamsComponent } from './mes-teams/mes-teams.component';
 import { TeamComponent } from './mes-teams/team/team.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {LoginComponent} from './login/login.component';
+import { RegisterComponent } from './register/register/register.component';
+import { EditProfilComponent } from './edit-profil/edit-profil.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import {LoginComponent} from './login/login.component';
     NavbarComponent,
     LoginComponent,
     MesTeamsComponent,
-    TeamComponent
+    TeamComponent,
+    RegisterComponent,
+    EditProfilComponent
   ],
   imports: [
     BrowserModule,
