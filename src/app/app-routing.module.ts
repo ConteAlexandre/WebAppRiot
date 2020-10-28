@@ -4,12 +4,14 @@ import {LoginComponent} from './login/login.component';
 import {MesTeamsComponent} from './mes-teams/mes-teams.component';
 import {RegisterComponent} from './register/register.component';
 import {EditProfilComponent} from './edit-profil/edit-profil.component';
+import {CreationTournoiComponent} from './creation-tournoi/creation-tournoi.component';
 
 const routes: Routes = [
-  {path: "mes-teams", component: MesTeamsComponent},
+  {path: 'mes-teams', component: MesTeamsComponent},
   { path: 'login', component: LoginComponent },
   {path: 'register', component: RegisterComponent},
-  {path: 'profil', component: EditProfilComponent}
+  {path: 'profil', component: EditProfilComponent},
+  {path: 'creation-tournoi', component: CreationTournoiComponent}
 ];
 
 @NgModule({

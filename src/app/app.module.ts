@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {LoginComponent} from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { EditProfilComponent } from './edit-profil/edit-profil.component';
+import { CreationTournoiComponent } from './creation-tournoi/creation-tournoi.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { EditProfilComponent } from './edit-profil/edit-profil.component';
     MesTeamsComponent,
     TeamComponent,
     RegisterComponent,
-    EditProfilComponent
+    EditProfilComponent,
+    CreationTournoiComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
