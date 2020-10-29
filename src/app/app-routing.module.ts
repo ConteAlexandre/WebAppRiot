@@ -10,6 +10,7 @@ import {CreateTeamComponent} from "./create-team/create-team.component";
 import {HomeComponent} from "./home/home.component";
 import {ListTournoisComponent} from "./list-tournois/list-tournois.component";
 import {TournoisComponent} from "./tournois/tournois.component";
+import {MatchComponent} from "./match/match.component";
 
 const routes: Routes = [
   { path: "mes-teams", component: MesTeamsComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'profil', component: EditProfilComponent },
   { path: 'creation-tournoi', component: CreationTournoiComponent },
-  { path: 'recent', component: TotalComponent }
+  { path: 'recent', component: TotalComponent },
+  { path: 'match', component: MatchComponent }
 ];
 
 @NgModule({
