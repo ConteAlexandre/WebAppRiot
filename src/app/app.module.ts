@@ -16,6 +16,7 @@ import { ListTournoisComponent } from './list-tournois/list-tournois.component';
 import { HomeComponent } from './home/home.component';
 import { CreateTeamComponent } from './create-team/create-team.component';
 import { TournoisComponent } from './tournois/tournois.component';
+import { StatsMatchComponent } from './stats/stats-match/stats-match.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TournoisComponent } from './tournois/tournois.component';
     ListTournoisComponent,
     HomeComponent,
     CreateTeamComponent,
-    TournoisComponent
+    TournoisComponent,
+    StatsMatchComponent
   ],
   imports: [
     BrowserModule,
