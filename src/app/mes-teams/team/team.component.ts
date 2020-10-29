@@ -17,4 +17,4 @@ export class TeamComponent implements OnInit {
   pressIcon() {
     this.hidden = !this.hidden;
   }
-};
+}
