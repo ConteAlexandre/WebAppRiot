@@ -25,6 +25,7 @@
   height: 30px;
   width: 90%;
   margin: 15px 15px;
+  color: white;
 }
 
 .form select{
@@ -42,4 +43,22 @@
   margin-top: 25px;
   margin-bottom: 25px;
   justify-content: center;
+}
+
+select{
+  text-align-last: center;
+}
+
+select option {
+  color: white;
+  background-color: black;
+  align-content: center;
+  align-content-last: center;
+}
+
+.blackColor {
+  color: white;
+  background-color: black;
+  align-content-last: center;
+  align-content: center;
 }
