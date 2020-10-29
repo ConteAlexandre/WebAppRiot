@@ -7,6 +7,7 @@ import { MesTeamsComponent } from './mes-teams/mes-teams.component';
 import { TeamComponent } from './mes-teams/team/team.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {LoginComponent} from './login/login.component';
+import { ListTournoisComponent } from './list-tournois/list-tournois.component';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     MesTeamsComponent,
     TeamComponent,
+    ListTournoisComponent,
     HomeComponent
   ],
   imports: [
