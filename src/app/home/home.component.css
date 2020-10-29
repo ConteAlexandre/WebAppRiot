@@ -4,9 +4,16 @@ p {
 
 .homeContainer{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+}
+
+.boxMax{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .boxHome{
