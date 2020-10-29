@@ -1,0 +1,104 @@
+p {
+  color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  margin-top: 30px;
+  width: 90%;
+}
+
+.nameTournois{
+  justify-content: center;
+  align-items: center;
+}
+
+.nameTournois p{
+  font-size: 3em;
+  padding: 10px;
+  margin: 0;
+}
+
+.formatTournois p{
+  margin: 0;
+  font-size: 2em;
+}
+
+.format{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slot{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right: -40px;
+}
+
+.nameList p{
+  margin: 0;
+  font-size: 2.3em;
+}
+
+.iconDown{
+  width: 20px;
+  padding-right: 20px;
+}
+
+.btnSelect{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.list{
+  flex-direction: column;
+}
+
+.listTeam{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.listTeam div{
+  display: flex;
+  width: 28%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.seedTeam{
+  margin: 0;
+  font-size: 1.2em;
+}

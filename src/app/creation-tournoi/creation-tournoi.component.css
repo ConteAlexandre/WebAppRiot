@@ -1,0 +1,65 @@
+.tournoi {
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  max-width: 450px;
+  width: 100%;
+  margin: 20px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form label {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.form input {
+  height: 30px;
+  width: 90%;
+  margin: 15px 15px;
+  color: white;
+  text-align: center;
+}
+
+.form select{
+  height: 30px;
+  width: 90%;
+  margin: 15px 15px;
+}
+
+.form button {
+  color: white;
+  font-size: 25px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 456px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+select{
+  text-align-last: center;
+}
+
+select option {
+  color: white;
+  background-color: black;
+  align-content: center;
+  align-content-last: center;
+}
+
+.blackColor {
+  color: white;
+  background-color: black;
+  align-content-last: center;
+  align-content: center;
+}
