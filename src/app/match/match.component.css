@@ -4,9 +4,17 @@ p {
 
 .homeContainer{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+}
+
+.boxMax{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .boxHome{
@@ -44,7 +52,6 @@ p {
   flex-direction: column;
   align-items: center;
 }
-
 .stat{
   align-items: center;
 }
@@ -72,3 +79,107 @@ p {
   font-size: 2em;
 }
 
+.teamBox{
+  flex-direction: column;
+}
+
+.teamView{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.teamView p{
+  margin: 0;
+  font-size: 1.5em;
+}
+.posteTeam{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.line{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.teamName{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.teamName p{
+  font-size: 2em;
+  margin: 10px 25px;
+}
+
+.teamBox{
+  margin-top: 40px;
+}
+
+.poste{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+
+.itemMain{
+  display: flex;
+  padding: 10px 0 10px 10px;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+}
+
+.character{
+  width: 69%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.character img{
+  max-width: 60px;
+  width: 100%;
+}
+
+.smite img{
+  max-width: 30px;
+  width: 100%;
+}
+
+.smite{
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.rune{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+.rune img{
+  width: 50%;
+}
+
+.rank{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
