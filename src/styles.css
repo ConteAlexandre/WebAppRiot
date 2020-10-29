@@ -31,4 +31,5 @@ body {
 .box {
   display: flex;
   border: white solid;
+  max-width: 450px;
 }

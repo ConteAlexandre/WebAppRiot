@@ -9,6 +9,7 @@
   align-items: center;
   height: 50px;
   margin: 25px 5%;
+  width: 90%;
 }
 
 .title p{
@@ -20,9 +21,17 @@
 .btn {
   justify-content: center;
   align-items: center;
+  width: 90%;
   margin: 25px 20% 0 20%;
   font-size: 1.5em;
   color: white;
   height: 50px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 

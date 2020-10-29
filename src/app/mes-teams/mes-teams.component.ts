@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mes-teams.component.css']
 })
 export class MesTeamsComponent implements OnInit {
-  team : Object = {
-    name:'MaSuperTeam',
+  team = {
+    name: 'MaSuperTeam',
   }
   constructor() { }
 
