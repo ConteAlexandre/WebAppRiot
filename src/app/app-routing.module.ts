@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
 import {LoginComponent} from './login/login.component';
 import {MesTeamsComponent} from './mes-teams/mes-teams.component';
+import {TotalComponent} from './stats/total/total.component';
 import {RegisterComponent} from './register/register.component';
 import {EditProfilComponent} from './edit-profil/edit-profil.component';
 import {CreationTournoiComponent} from './creation-tournoi/creation-tournoi.component';
@@ -20,10 +21,12 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'profil', component: EditProfilComponent },
   { path: 'creation-tournoi', component: CreationTournoiComponent }
+  { path: 'recent', component: TotalComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
