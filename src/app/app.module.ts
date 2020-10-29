@@ -11,6 +11,10 @@ import { RegisterComponent } from './register/register.component';
 import { EditProfilComponent } from './edit-profil/edit-profil.component';
 import { CreationTournoiComponent } from './creation-tournoi/creation-tournoi.component';
 import {FormsModule} from "@angular/forms";
+import { ListTournoisComponent } from './list-tournois/list-tournois.component';
+import { HomeComponent } from './home/home.component';
+import { CreateTeamComponent } from './create-team/create-team.component';
+import { TournoisComponent } from './tournois/tournois.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import {FormsModule} from "@angular/forms";
     TeamComponent,
     RegisterComponent,
     EditProfilComponent,
-    CreationTournoiComponent
+    CreationTournoiComponent,
+    ListTournoisComponent,
+    HomeComponent,
+    CreateTeamComponent,
+    TournoisComponent
   ],
   imports: [
     BrowserModule,
