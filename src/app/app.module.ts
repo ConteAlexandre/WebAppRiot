@@ -12,6 +12,7 @@ import { EditProfilComponent } from './edit-profil/edit-profil.component';
 import { ListTournoisComponent } from './list-tournois/list-tournois.component';
 import { HomeComponent } from './home/home.component';
 import { CreateTeamComponent } from './create-team/create-team.component';
+import { TournoisComponent } from './tournois/tournois.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CreateTeamComponent } from './create-team/create-team.component';
     EditProfilComponent,
     ListTournoisComponent,
     HomeComponent,
-    CreateTeamComponent
+    CreateTeamComponent,
+    TournoisComponent
   ],
   imports: [
     BrowserModule,
