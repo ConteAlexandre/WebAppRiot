@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { CreateTeamComponent } from './create-team/create-team.component';
 import { TournoisComponent } from './tournois/tournois.component';
 import { StatsMatchComponent } from './stats/stats-match/stats-match.component';
+import { MatchComponent } from './match/match.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { StatsMatchComponent } from './stats/stats-match/stats-match.component';
     HomeComponent,
     CreateTeamComponent,
     TournoisComponent,
-    StatsMatchComponent
+    StatsMatchComponent,
+    MatchComponent
   ],
   imports: [
     BrowserModule,
