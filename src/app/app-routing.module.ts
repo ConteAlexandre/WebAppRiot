@@ -15,7 +15,7 @@ import {MatchComponent} from "./match/match.component";
 
 const routes: Routes = [
   { path: "mes-teams", component: MesTeamsComponent },
-  { path: "home", component: HomeComponent },
+  { path: "", component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'createTeam', component: CreateTeamComponent },
   { path: 'listTournois', component: ListTournoisComponent },
