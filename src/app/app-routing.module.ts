@@ -12,10 +12,10 @@ import {ListTournoisComponent} from "./list-tournois/list-tournois.component";
 import {TournoisComponent} from "./tournois/tournois.component";
 import {StatsMatchComponent} from "./stats/stats-match/stats-match.component";
 import {MatchComponent} from "./match/match.component";
-
 const routes: Routes = [
   { path: "mes-teams", component: MesTeamsComponent },
   { path: "", component: HomeComponent },
+
   { path: 'login', component: LoginComponent },
   { path: 'createTeam', component: CreateTeamComponent },
   { path: 'listTournois', component: ListTournoisComponent },

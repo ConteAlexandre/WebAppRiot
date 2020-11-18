@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable, of} from 'rxjs';
-import {map, tap} from 'rxjs/operators';
+import {catchError, map, tap} from 'rxjs/operators';
 import * as jwt_decode from 'jwt-decode';
 import {stringify} from 'querystring';
 import {arrayify} from 'tslint/lib/utils';
@@ -32,18 +32,28 @@ export class AuthService {
   }
 
   // tslint:disable-next-line:typedef
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+      console.log(error);
+      return of(result as T);
+    };
+  }
+
+  // tslint:disable-next-line:typedef
   login(identifiant: Client) {
-    return this.http.post<Client>(apiUrl + '/login', identifiant)
+    return this.http.post<Client>(apiUrl + 'api/login_check', identifiant)
       .pipe(map(
         userData => {
           sessionStorage.setItem('email', identifiant.email);
+          sessionStorage.setItem('summonerName', identifiant.summonerName);
           const tokenStr = 'Bearer ' + userData.token;
           const decode = jwt_decode(tokenStr);
           sessionStorage.setItem('role', decode.role);
           sessionStorage.setItem('token', tokenStr);
           return userData;
         }
-      ));
+        ),
+        catchError(this.handleError<Client>('errorLogin')));
   }
 
   // tslint:disable-next-line:typedef
@@ -55,6 +65,7 @@ export class AuthService {
 
   // tslint:disable-next-line:typedef
   logout() {
+    sessionStorage.removeItem('summonerName');
     sessionStorage.removeItem('email');
     sessionStorage.removeItem('role');
     sessionStorage.removeItem('token');
