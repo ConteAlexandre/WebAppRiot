@@ -2,12 +2,14 @@
   <h2>Login</h2>
   <a href="register" class="register">Register</a>
 
-  <form class="form" action="#" method="post">
+  <form class="form" action="#" [formGroup]="form" (ngSubmit)="login()">
     <label for="summonerName">Summoner Name</label>
-    <input type="text" id="summonerName" name="summonerName" placeholder="Enter your Summoner Name" class="black box">
+    <input type="text" id="summonerName" name="summonerName" placeholder="Enter your Summoner Name" class="black box"
+           formControlName="username">
 
     <label for="Password">Password</label>
-    <input type="text" id="Password" name="Password" placeholder="Enter your Password" class="black box">
+    <input type="text" id="Password" name="Password" placeholder="Enter your Password" class="black box"
+           formControlName="password">
 
     <button type="submit" class="box blue">Login</button>
   </form>

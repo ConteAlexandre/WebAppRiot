@@ -1,7 +1,7 @@
 export class Client {
   id: string;
   email: string;
-  summonerName: string;
+  username: string;
   password: string;
   role: string;
   token: string;
