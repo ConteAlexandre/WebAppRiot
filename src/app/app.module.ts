@@ -1,6 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {MesTeamsComponent} from './mes-teams/mes-teams.component';
@@ -18,6 +17,7 @@ import {CreateTeamComponent} from './create-team/create-team.component';
 import {TournoisComponent} from './tournois/tournois.component';
 import {HttpClientModule} from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +32,9 @@ import {HttpClientModule} from '@angular/common/http';
     ListTournoisComponent,
     HomeComponent,
     CreateTeamComponent,
-    TournoisComponent
+    TournoisComponent,
+    StatsMatchComponent,
+    MatchComponent
   ],
   imports: [
     BrowserModule,
