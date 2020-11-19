@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AlgoService} from "../services/algo.service";
 
 @Component({
   selector: 'app-tournois',
@@ -7,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TournoisComponent implements OnInit {
   hidden = true;
+  listTeam = [];
+  listMatch = [];
 
-  constructor() { }
+  constructor() {
+    this.listTeam = AlgoService.createTeamsForTournament(AlgoService.generateListSumMock(64*5),5);
+    this.listTeam.sort(function (a, b) {return a.rank - b.rank;}).reverse();
+    this.listTeam.forEach((team, index) => {
+      team.seed = index+1;
+    });
+    this.listMatch = AlgoService.algoTournament(this.listTeam);
+  }
 
   ngOnInit(): void {
   }
