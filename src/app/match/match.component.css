@@ -1,0 +1,191 @@
+p {
+  color: white;
+}
+
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxMax{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 450px;
+}
+
+.boxHome{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.teamBox{
+  width: 80%;
+}
+
+.boxTeams{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.titleMatch{
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.styleMatch{
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.team{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.matchBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat{
+  align-items: center;
+}
+
+.statTeamName{
+  font-size: 1em;
+  margin-bottom: 35px;
+  margin-top: 15px;
+}
+
+.boxWinRate{
+  display: flex;
+  margin-top: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.boxWinRate p{
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1em;
+}
+
+.rate{
+  margin-left: 5px
+}
+
+.teamBox{
+  flex-direction: column;
+}
+
+.teamView{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.teamView p{
+  margin: 0;
+  font-size: 1em;
+}
+.posteTeam{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.line{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.teamName{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.teamName p{
+  font-size: 2em;
+  margin: 10px 25px;
+}
+
+.teamBox{
+  margin-top: 40px;
+}
+
+.poste{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+
+.itemMain{
+  display: flex;
+  padding: 10px 0 10px 10px;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+}
+
+.character{
+  width: 69%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.character img{
+  max-width: 60px;
+  width: 100%;
+}
+
+.smite img{
+  max-width: 30px;
+  width: 100%;
+}
+
+.smite{
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.rune{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+.rune img{
+  width: 50%;
+}
+
+.rank{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}

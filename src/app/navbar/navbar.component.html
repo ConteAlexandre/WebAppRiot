@@ -1,27 +1,36 @@
 <nav class="container">
   <div class="wrapper">
-      <div class="bot" id="menuToggle">
-        <input type="checkbox"/>
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul class="background" id="menu">
-          <a href="creation-tournoi">
-            <li>Creation Tournoi</li>
-          </a>
-          <a href="#">
-            <li>page 2</li>
-          </a>
-          <a href="">
-            <li>page 3</li>
-          </a>
-          <a href="#">
-            <li>page 4</li>
-          </a>
-        </ul>
-      </div>
+    <div class="bot" id="menuToggle">
+      <input type="checkbox"/>
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul class="background" id="menu">
+        <a href="/">
+          <li>Home</li>
+        </a>
+        <a href="listTournois">
+          <li>Tournoi</li>
+        </a>
+        <a href="creation-tournoi">
+          <li>Créer un tournoi</li>
+        </a>
+        <a href="createTeam">
+          <li>Créer une team</li>
+        </a>
+        <a href="mes-teams">
+          <li>Mes teams</li>
+        </a>
+        <a href="recent">
+          <li>Mes stats</li>
+        </a>
+        <a href="profil">
+          <li>Mon profil</li>
+        </a>
+      </ul>
+    </div>
     <div id="log">
-      <a href="#">Connexion</a>
+      <a routerLink="login">Connexion</a>
     </div>
   </div>
 </nav>
