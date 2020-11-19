@@ -12,24 +12,18 @@
         <p>loupe</p>
       </div>
       <div class="containerSearch">
-        <div class="box blue itemSearch">
-          <p>michelle</p>
-        </div>
-        <div class="box blue itemSearch">
-          <p>michelle</p>
-        </div>
-        <div class="box blue itemSearch">
-          <p>michelle</p>
-        </div>
-        <div class="box blue itemSearch">
-          <p>michelle</p>
-        </div>
-        <div class="box blue itemSearch">
-          <p>michelle</p>
-        </div>
-        <div class="box blue itemSearch">
-          <p>michelle</p>
-        </div>
+        <p>summoner selectionné</p>
+
+          <div
+            cdkDropList
+            #listSummoner="cdkDropList"
+            [cdkDropListData]="ListSummoner"
+            [cdkDropListConnectedTo]="[doneListSummonerTop, doneListSummonerJungle, doneListSummonerMid, doneListSummonerAdc, doneListSummonerSupport]"
+            class="list-summoner-selected"
+            (cdkDropListDropped)="onDrop($event)">
+            <div class="summoner-block" *ngFor="let listSummoner of ListSummoner" cdkDrag>{{listSummoner}}</div>
+          </div>
+
       </div>
     </div>
 
@@ -40,61 +34,93 @@
       </div>
 
       <div class="sumPoste">
-
-        <div class="sum">
-          <p>michelle</p>
-          <p class="btnPoste">-</p>
+        <div class="containerlist">
+          <div
+            cdkDropList
+            #doneListSummonerTop="cdkDropList"
+            [cdkDropListData]="ListSelectedTop"
+            [cdkDropListConnectedTo]="[listSummoner]"
+            class="list-summoner"
+            (cdkDropListDropped)="onDrop($event)">
+            <div class="summoner-block" *ngFor="let listSelectedTop of ListSelectedTop" cdkDrag>{{listSelectedTop}}</div>
+          </div>
         </div>
-
       </div>
     </div>
+
     <div class="box black line">
       <div class="namePoste">
         <p>jungle</p>
       </div>
-
       <div class="sumPoste">
-
-        <div class="sum">
-          <p>michel</p>
-          <p class="btnPoste">-</p>
+        <div class="containerlist">
+          <div
+            cdkDropList
+            #doneListSummonerJungle="cdkDropList"
+            [cdkDropListData]="ListSelectedJungle"
+            [cdkDropListConnectedTo]="[listSummoner]"
+            class="list-summoner"
+            (cdkDropListDropped)="onDrop($event)">
+            <div class="summoner-block" *ngFor="let listSelectedJungle of ListSelectedJungle" cdkDrag>{{listSelectedJungle}}</div>
+          </div>
         </div>
-
-        <div class="barreSplit"></div>
-
-        <div class="sum">
-          <p>pierre</p>
-          <p class="btnPoste">-</p>
-        </div>
-
       </div>
     </div>
+
     <div class="box black line">
       <div class="namePoste">
         <p>mid</p>
       </div>
-
       <div class="sumPoste">
-
+        <div class="containerlist">
+          <div
+            cdkDropList
+            #doneListSummonerMid="cdkDropList"
+            [cdkDropListData]="ListSelectedMid"
+            [cdkDropListConnectedTo]="[listSummoner]"
+            class="list-summoner"
+            (cdkDropListDropped)="onDrop($event)">
+            <div class="summoner-block" *ngFor="let listSelectedMid of ListSelectedMid" cdkDrag>{{listSelectedMid}}</div>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="box black line">
       <div class="namePoste">
         <p>adc</p>
       </div>
-
       <div class="sumPoste">
-
-
+        <div class="containerlist">
+          <div
+            cdkDropList
+            #doneListSummonerAdc="cdkDropList"
+            [cdkDropListData]="ListSelectedAdc"
+            [cdkDropListConnectedTo]="[listSummoner]"
+            class="list-summoner"
+            (cdkDropListDropped)="onDrop($event)">
+            <div class="summoner-block" *ngFor="let listSelectedAdc of ListSelectedAdc" cdkDrag>{{listSelectedAdc}}</div>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="box black line">
       <div class="namePoste">
         <p>support</p>
       </div>
-
       <div class="sumPoste">
-
+        <div class="containerlist">
+          <div
+            cdkDropList
+            #doneListSummonerSupport="cdkDropList"
+            [cdkDropListData]="ListSelectedSupport"
+            [cdkDropListConnectedTo]="[listSummoner]"
+            class="list-summoner"
+            (cdkDropListDropped)="onDrop($event)">
+            <div class="summoner-block" *ngFor="let listSelectedSupport of ListSelectedSupport" cdkDrag>{{listSelectedSupport}}</div>
+          </div>
+        </div>
       </div>
     </div>
 
