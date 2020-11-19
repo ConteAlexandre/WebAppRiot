@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AlgoService} from "../services/algo.service";
 
 @Component({
   selector: 'app-list-tournois',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListTournoisComponent implements OnInit {
 
-  constructor() { }
+  listSum = [];
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }

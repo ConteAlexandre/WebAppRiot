@@ -21,7 +21,7 @@ const FIVE  = 5;
 
 export class AlgoService {
 
-  public generateListSumMock(nb) {
+  static generateListSumMock(nb: number) {
     let result = [];
     for (let i = 0; i < nb; i++){
       let randRank = Math.round(Math.random()*(4 - 1)+1);
@@ -127,7 +127,7 @@ export class AlgoService {
     return result;
   }
 
-  public calculScoreRank(summoner) {
+  static calculScoreRank(summoner) {
     let result = 0;
     switch (summoner.tier){
       case "IRON":
@@ -175,11 +175,11 @@ export class AlgoService {
     return result
   }
 
-  public calculKDA(summoner) {
+  static calculKDA(summoner) {
     return ( summoner.kill + summoner.assist ) / summoner.mort;
   }
 
-  public algoSuggestion(team, listSummoners, gapRank) {
+  static algoSuggestion(team, listSummoners, gapRank) {
     let scoreRankTeam = 0;
     let KDATeam = 0;
     let listPoste = [];
@@ -268,7 +268,7 @@ export class AlgoService {
     }
   }
 
-  public createTeamForSummoner(summoner,listSummoners,format){
+  static createTeamForSummoner(summoner,listSummoners,format){
     let firstSummoner = JSON.parse(JSON.stringify(summoner));
     firstSummoner.poste = firstSummoner.poste[0];
     let result = [firstSummoner];
@@ -297,7 +297,7 @@ export class AlgoService {
     return team;
   }
 
-  public createTeamsForTournament(listSummoners,format) {
+  static createTeamsForTournament(listSummoners,format) {
     let scoreMoyenneTournament = 0
     listSummoners.forEach((summoner) => {
       scoreMoyenneTournament += this.calculScoreRank(summoner);
@@ -345,7 +345,7 @@ export class AlgoService {
   }
 
 
-  public algoTournament(listTeam) {
+  static algoTournament(listTeam) {
     listTeam.sort(function (a, b) {return a.rank - b.rank;}).reverse();
     listTeam.forEach((team, index) => {
       team.seed = index+1;

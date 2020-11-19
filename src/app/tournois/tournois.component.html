@@ -27,87 +27,25 @@
       <img class="iconDown" src="assets/icon/arrow-down-sign-to-navigate.svg"/>
     </div>
     <div [hidden]="hidden" >
-      <div class="listTeam" >
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
-        </div>
-        <div>
-          <p class="seedTeam">1 : Fakerteam</p>
+      <div class="listTeam">
+        <div *ngFor="let item of listTeam">
+          <p class="seedTeam">{{item.seed}} : {{item.summoners[0].id}}</p>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="box black formatTournois" *ngFor="let item of listMatch">
+    <div class="format">
+      <p>{{item[0].summoners[0].id}}</p>
+    </div>
+    <div class="map">
+      <p>vs</p>
+    </div>
+    <div class="slot">
+      <p>{{item[1].summoners[0].id}}</p>
+    </div>
+  </div>
+
 </div>
 
