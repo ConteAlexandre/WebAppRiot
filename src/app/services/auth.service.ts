@@ -44,7 +44,7 @@ export class AuthService {
 
 
   isUserLoggedIn() {
-    const user = sessionStorage.getItem('token');
+    const user = localStorage.getItem('currentUser');
     console.log(!(user === null));
     return !(user === null);
   }
